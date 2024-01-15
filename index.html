@@ -1,37 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Super Star Car Unblocked - ClassRoom6x</title>
-	<meta name="website" content="classroom6x.gitlab.io" />
-	<script>
-		window.config = {
-		loader: 'unity',
-		debug: false,
-		maxRatio: 16 / 9,
-		minRatio: 9 / 16,
-
-		title: 'Super Star Car',
-		thumbnail: '8376e3a632b640cd3e9ca53b9963000a.jpeg',
-		numScreenshots:  4 ,
-
-		unityVersion: '2019.4.17f1',
-		unityWebglBuildUrl: 'Build\/Build.json',
-
-		fileSize:  55 ,
-		cachedDecompressedFileSizes: {
-			'Build.data.unityweb':  49803531 ,
-			'Build.wasm.code.unityweb':  5635180 ,
-			'Build.wasm.framework.unityweb':  86316 ,
-		},
-	};
-	</script>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Snow Rider 3D Unblocked - ClassRoom6x</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <meta name="description" content="Snow Rider 3D, Snow Rider 3D Mathnook, Snow Rider 3D Unblocked">
+    <meta property="og:image" content="snow-rider-3d.png" />
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/SnowRider3D-gd-1.json", { onProgress: UnityProgress, Module: { onRuntimeInitialized: function () { UnityProgress(gameInstance, "complete") } } });
+    </script>
 </head>
 
-<body style="overflow:hidden;">
-	<script src="patch/sdkv3/master-loader.js"></script>
+<body style="overflow:hidden; margin:0; padding:0;">
+    <div class="webgl-content" style="position: absolute; width: 100%; height: 100%;">
+        <div id="gameContainer" style="width: 960px; height: 600px; margin: auto"></div>
+    </div>
 </body>
 
 </html>
